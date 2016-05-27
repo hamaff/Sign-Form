@@ -1,0 +1,122 @@
+/* ================================================================================
+	#Reset
+================================================================================ */
+* { padding: 0; margin: 0; outline: 0; }
+
+/* ================================================================================
+	#Base
+================================================================================ */
+html,
+body { height: 100%; }
+
+body { background: #fff; font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 1.2; color: #000; }
+
+a { color: #000; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+
+img { border: 0; vertical-align: middle; }
+
+ol,
+ul { list-style-position: inside; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: normal; }
+
+h1 { font-family: ; font-size: ; line-height: ; color: #; }
+h2 { font-family: ; font-size: ; line-height: ; color: #; }
+h3 { font-family: ; font-size: ; line-height: ; color: #; }
+h4 { font-family: ; font-size: ; line-height: ; color: #; }
+h5 { font-family: ; font-size: ; line-height: ; color: #; }
+h6 { font-family: ; font-size: ; line-height: ; color: #; }
+
+p { padding-bottom: ; }
+
+/* ================================================================================
+	#Helpers
+================================================================================ */
+.alignleft { float: left; }
+.alignright { float: right; }
+
+.clearfix:before,
+.clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* ================================================================================
+	#Form Sign In
+================================================================================ */
+.forms-wrapper { overflow: hidden; position: relative; width: 490px; height: 320px; border-radius: 2px; margin: 100px auto 0; box-shadow: 0 0 50px 10px rgba(0,0,0, .2); }
+
+.form { float: left; width: 440px; height: 270px; padding: 25px; }
+.form .form-head { padding-bottom: 35px; }
+.form h4 { font-size: 14px; color: #101d67; font-weight: 500; text-align: center; }
+
+.form .form-body { padding-bottom: 25px; }
+.form .user-avatar { text-align: center; }
+.form .user-avatar h5 { font-size: 13px; color: #101d67; font-weight: 500; }
+.form .avatar { overflow: hidden; width: 50px; height: 50px; border-radius: 50%; border: 1px solid #d5dff2; margin: 0 auto 5px; }
+.form .avatar img { display: block; width: 100%; height: auto; }
+
+.form-foot { font-size: 11px; color: #5571b9; }
+.form-foot p { padding-top: 12px; }
+.form-foot a { color: #101d67; font-weight: 500; }
+.form-foot a:hover { color: #da6158; text-decoration: none; }
+.form-signin .form-foot .btn { margin-left: 5px; }
+
+.form-forgot .form-body .form-row,
+.form-forgot .form-foot .form-row { width: 47%; margin: 0 auto; }
+.form-forgot .form-body .form-row ~ .form-row { margin-top: 15px; }
+
+.form-forgot .form-foot { text-align: center; }
+.form-forgot .form-foot .btn { margin-bottom: 5px; }
+.form-forgot .form-foot a ~ a { display: inline-block; margin-left: 10px; }
+
+.form-cols { overflow: hidden; }
+.form-col { float: left; }
+.form-col-1of2 { width: 47%; }
+.form-col-1of2 ~ .form-col-1of2 { margin-left: 6%; }
+.form-body .form-row ~ .form-row { margin-top: 25px; }
+
+.form-label { display: block; padding-bottom: 6px; font-size: 13px; color: #101d67; font-weight: 500; }
+.field { width: 100%; height: 34px; padding: 0 10px; border: 1px solid #d5dff2; border-radius: 2px; background: #f5f6fb; font-family: 'Roboto', sans-serif; font-size: 12px; color: #101d67; box-sizing: border-box; }
+
+.btn { display: inline-block; min-width: 110px; height: 34px; border: 0; border-radius: 2px; font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; -webkit-appearance: none; }
+.btn:hover { text-decoration: none; }
+
+.btn-full { width: 100%; }
+
+.btn-red { background: #da6158; color: #fff; }
+.btn-red:hover { background: #48d2b7; }
+
+.btn,
+.form-foot a {
+	-webkit-transition: background .3s, color .3s;
+	   -moz-transition: background .3s, color .3s;
+	     -o-transition: background .3s, color .3s;
+	        transition: background .3s, color .3s; 
+}
+
+/* ================================================================================
+	#Animation
+================================================================================ */
+.form { position: absolute; top: 0; left: 0; }
+
+.form-signup { -webkit-transform: translateX(-490px); transform: translateX(-490px); }
+.wrapper-signup .form-signup { -webkit-transform: translateX(0); transform: translateX(0); }
+.wrapper-signup .form-signin { -webkit-transform: translateX(490px); transform: translateX(490px); }
+.wrapper-signup .form-forgot { -webkit-transform: translateX(980px); transform: translateX(980px); }
+
+.form-forgot { -webkit-transform: translateX(490px); transform: translateX(490px); }
+.wrapper-forgot .form-signin { -webkit-transform: translateX(-490px); transform: translateX(-490px); }
+.wrapper-forgot .form-forgot { -webkit-transform: translateX(0); transform: translateX(0); }
+
+.form {
+	-webkit-transition: -webkit-transform .3s;
+	   -moz-transition:    -moz-transform .3s;
+	     -o-transition: 	 -o-transform .3s;
+	        transition: 		transform .3s; 
+}
